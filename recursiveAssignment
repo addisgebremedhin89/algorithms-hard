@@ -114,10 +114,12 @@ if(sortedArray.length < 1) {
 return sortedArray;
 }
 else {
+
+
 return index = sortedArray + isValueInArray(sortedArray[0+1]);
 sortedArray.push(index);
 }
-if(input === index) {
+if(input == index) {
 return true;
 }
 else {
@@ -126,6 +128,40 @@ return false;
 
 }
 isValueInArray(sortedArray,input);
+
+
+==============
+
+Now to Solve - Addis Attempt
+
+var arr = [3, 10, 36, 57, 90];
+var x = 10;
+
+function findX(arr,x) {
+
+if(arr.length < 1) {
+return arr;
+}
+else {
+
+var mid = (arr.length/ 2);
+var front = arr[0];
+var end = (arr.length-1);
+
+return index = arr + findX(arr[0+1], x);
+arr.push(index);
+}
+if(x == index) {
+return true;
+}
+else {
+return false;
+}
+
+}
+isValueInArray(arr,x);
+
+
 
 
 
