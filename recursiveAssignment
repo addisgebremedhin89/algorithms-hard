@@ -1,0 +1,131 @@
+Write a recursive function (for/while loops not allowed) that given a sorted array and a value, determines whether the value is found within the array.
+
+For example:
+rBinarySearch([1,3,5,6], 4) = false;
+rBinarySearch([4,5,6,8,12], 5) = true;
+
+Reminder, there are 3 requirements for effective recursion:
+They have base case(s)
+They always make a progress towards the goal
+Calls back into itself
+
+
+
+var sortedArray = [1, 2, 3, 4, 5];
+var inOrNot = 9;
+
+function isValueInArray(sortedArray, inOrNot) {
+
+if(sortedArray[] != inOrNot {
+return ;
+  }
+}
+
+isValueInArray(sortedArray, inOrNot);
+
+===============
+
+var sortedArray = [1, 2, 3, 4, 5];
+var inOrNot = 9;
+
+function isValueInArray(sortedArray, inOrNot) {
+
+if(sortedArray[] != inOrNot) {
+return true;
+  }
+return isValueInArray(sortedArray;
+}
+
+isValueInArray(sortedArray, inOrNot);
+
+==============
+
+var sortedArray = [1, 2, 3, 4, 5];
+var value = 9;
+
+function isValueInArray(sortedArray, value) {
+
+if(sortedArray < 0) {
+return 0;
+}
+
+return sortedArray - isValueInArray(sortedArray-1);
+}
+
+isValueInArray(sortedArray, value);
+
+==============
+
+var sortedArray = [1, 2, 3, 4, 5];
+
+function isValueInArray(sortedArray) {
+
+if(sortedArray.length < 1 ){
+
+return sortedArray;
+}
+
+return sortedArray + isValueInArray(sortedArray[0+1]);
+}
+
+isValueInArray(sortedArray);
+
+==============
+
+Final Attempt!!!!
+
+var sortedArray = [1, 2, 3, 4, 5];
+
+function isValueInArray(sortedArray) {
+
+if(sortedArray.length > 1) {
+return sortedArray + isValueInArray(sortedArray[0+1]);
+
+}
+
+}
+
+isValueInArray(sortedArray);
+
+var sortedArray = [1, 2, 3, 4, 5];
+var emptyArray = [];
+function isValueInArray(sortedArray, emptyArray) {
+
+if(sortedArray.length < 1) {
+return sortedArray;
+}
+else {
+  var index = sortedArray + isValueInArray(sortedArray[0+1]);
+  return emptyArray.push(index);
+}
+}
+
+isValueInArray(sortedArray, emptyArray);
+==============
+
+Now to find the value
+
+var sortedArray = [1, 2, 3, 4, 5];
+var input = 9;
+
+function isValueInArray(sortedArray,input) {
+
+if(sortedArray.length < 1) {
+return sortedArray;
+}
+else {
+return index = sortedArray + isValueInArray(sortedArray[0+1]);
+sortedArray.push(index);
+}
+if(input === index) {
+return true;
+}
+else {
+return false;
+}
+
+}
+isValueInArray(sortedArray,input);
+
+
+
