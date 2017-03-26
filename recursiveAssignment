@@ -139,16 +139,16 @@ var x = 10;
 
 function findX(arr,x) {
 
-if(arr.length < 1) {
-return arr;
+if(arr.length < 1 && arr[0] != x) {
+return false;
 }
 else {
 
-var mid = (arr.length/ 2);
-var front = arr[0];
-var end = (arr.length-1);
+var mid = (arr.length -1 / 2);
+var front = 0;
+var end = arr.length-1;
 
-return index = arr + findX(arr[0+1], x);
+return index = arr + findX(front++, x);
 arr.push(index);
 }
 if(x == index) {
@@ -163,5 +163,151 @@ isValueInArray(arr,x);
 
 
 
+==========================
+
+Answer
+
+var arr = [3, 10, 45, 78, 102, 234, 567];
+var front = arr[0];
+var end = arr[arr.length-1];
+var x = 102;
+
+function findX(arr,x, front,end) {
+
+if(front > end) {
+return false;
+}
+
+if(front <= end) {
+var mid = (arr.length/ 2);
+
+arr[mid] == x) {
+  return mid;
+}
+
+if(arr[mid] > x) {
+ findX(arr, front, mid-1, x);
+}
+else{
+  return
+}
+}
+findX(arr,x,front,end);
+
+function findMe(num,set){
+if(num<set[0]||num>set[set.length-1]){
+  console.log('not even in range');
+  return;
+}
+function search(num,set){
+  var check=Math.ceil((last-start)/2);
+  if(check==0){
+    console.log('not here');
+    return false
+  }
+  if(num>set[start+check]){
+      start=start+check;
+      console.log('gotta recurse');
+      search(num,set)
+    }
+  else if(num<set[start+check]){
+    last=last-check;
+    console.log('gotta recurse');
+    search(num,set)
+  }
+  else{
+    console.log('im here')
+    return true;
+  }
+}
+
+var start=0;
+var last=set.length-1;
+search(num,set)
+}
+
+test=[0,2,6,8,10,16,20,32,90];
+findMe(1,test)
 
 
+==========================================
+
+var arr = [3, 9, 17, 29, 45];
+var val = 9;
+var start = 0; //index not value
+var end = arr.length-1;//4 //index not value
+
+function rBinSearch(arr, val, start, end) {
+  if(start >= end || val < arr[start] || val > arr[end] {
+    return false;
+}
+
+  var mid = parseInt(start + end)/2); //this gives us index #2
+  if(arr[mid] === val){ //if 17 equal equal to val
+    return true;
+}
+
+  if(arr[mid] > val) {
+    end = mid; //array sub[4] is now array sub[2]
+}
+
+  else {
+      start = mid + 1;
+}
+
+return rBinSearch(arr, val, start, end);
+
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+f > b
