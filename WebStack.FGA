@@ -1,0 +1,41 @@
+
+//FGA.prototype = Object.create(WebStack.prototype);//
+
+var WebStack = FGA.extend({
+   this.topic = 'topic';
+   this.mascot  = 'go quakers';
+   this.male = 0;
+   this.female = 0;
+
+   this.updateTopic = function(topic){
+      var newTopic = '';
+      this.updateTopic.replace(newTopic);
+
+      console.log(newTopic);
+};
+  
+   this.mascotSound = function( ){
+
+
+};
+
+   this.pickStudent = function( ){
+
+};
+
+FGA.prototype.rollCall = function() {
+
+};
+
+)}
+
+function Student() {
+  this.name = "full name";
+  this.age = 0;
+  this.gender = male || female;
+
+}
+
+FGA.prototype.students = .Student;
+
+WebStack.Student =
